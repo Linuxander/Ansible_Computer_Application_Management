@@ -1,0 +1,4 @@
+- name: "Install clamav anti-virus scanner"
+  apt:
+    name: clamav
+    state: latest

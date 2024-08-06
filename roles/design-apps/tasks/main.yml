@@ -1,0 +1,9 @@
+- name: "Installing GIMP photo editor"
+  apt:
+    name: gimp
+    state: latest
+
+- name: "Installing Inkscape vector image editor"
+  apt:
+    name: inkscape
+    state: latest

@@ -1,0 +1,24 @@
+- name: "Install Mailspring Email Client (Snap)"
+  snap:
+    name: mailspring
+    state: present
+
+- name: "Install Zoom (Flatpak)"
+  flatpak:
+    name:  https://flathub.org/repo/appstream/us.zoom.Zoom.flatpakref
+    state: present
+
+- name: "Install Fromscratch Text Editor (Snap)"
+  snap:
+    name: fromscratch
+    state: present
+
+- name: "Install SimpleNote Text Editor (Snap)"
+  snap:
+    name: simplenote
+    state: present
+
+- name: "Install FileZilla"
+  apt:
+    name: filezilla
+    state: latest

@@ -1,0 +1,9 @@
+- name: "Install Audacity"
+  apt:
+    name: audacity
+    state: latest
+
+- name: "Install Kdenlive"
+  apt:
+    name: kdenlive
+    state: latest

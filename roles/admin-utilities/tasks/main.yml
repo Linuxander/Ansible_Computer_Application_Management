@@ -1,0 +1,34 @@
+- name: "Install Gnome-Tweaks"
+  apt:
+    name: gnome-tweaks
+    state: latest
+
+- name: "Install tmux"
+  apt:
+    name: tmux
+    state: latest
+
+- name: "Install tree"
+  apt:
+    name: tree
+    state: latest
+
+- name: "Install vim"
+  apt:
+    name: vim
+    state: latest
+
+- name: "Install Flatpak"
+  apt:
+    name: flatpak
+    state: latest
+
+- name: "Install neofetch"
+  apt:
+    name: neofetch
+    state: latest
+
+- name: "Install xclip"
+  apt:
+    name: xclip
+    state: latest

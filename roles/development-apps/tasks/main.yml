@@ -1,0 +1,20 @@
+- name: "Install Android-Studio (Snap)"
+  snap:
+    name: android-studio
+    classic: yes
+    state: present
+
+- name: "Install Atom code editor"
+  apt:
+    name: atom
+    state: latest
+
+- name: "Install Postman Web API Manager (Snap)"
+  snap:
+    name: postman
+    state: present
+
+- name: "Installing VirtualBox"
+  apt:
+    name: virtualbox
+    state: latest

@@ -1,0 +1,9 @@
+- name: Update APT package cache
+  apt: 
+    update_cache: yes
+    cache_valid_time: 10800 # 3 hours
+
+- name: Upgrade APT to the latest packages
+  apt: 
+    upgrade: dist
+  register: apt_result

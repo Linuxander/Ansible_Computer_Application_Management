@@ -1,0 +1,25 @@
+# Play - Universal
+- hosts: all localhost
+  become: true
+  roles:
+    - updates
+    - admin-utilities
+    - security
+
+- hosts: home_clients family_clients localhost
+  become: true
+  roles:
+    - media-apps
+    - design-apps
+    - productive-apps
+    - production-apps
+
+- hosts: localhost
+  become: true
+  roles:
+    - development-apps
+    - production-apps-heavy
+
+- hosts: ironman
+  become: true
+    - development-apps

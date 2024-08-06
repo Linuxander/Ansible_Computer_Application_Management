@@ -1,0 +1,9 @@
+- name: "Install Blender"
+  apt:
+    name: blender
+    state: latest
+
+- name: "Install Sweet Home 3D"
+  apt:
+    name: sweethome3d
+    state: latest

@@ -1,0 +1,4 @@
+- name: "Installing VLC video player"
+  apt:
+    name: vlc
+    state: latest
